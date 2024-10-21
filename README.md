@@ -18,16 +18,16 @@ bring up the service using docker-compose.yml file.
 - **Database:** MongoDB
 - **Containerization:** Docker, Docker Compose
 
-### Prerequisites
+## Prerequisites
 - Install [Docker](https://docs.docker.com/get-docker/)
 - Install [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Clone the Repository and run the application
+## Clone the Repository and run the application
 ```bash
 git clone <repository-url>
 cd <repository-directory>
 docker-compose up --build
 ```
-### Access the application:
+## Access the application:
 Frontend: http://localhost:5173
 Backend: http://localhost:5000
