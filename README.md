@@ -1,5 +1,5 @@
 # MERN Stack Application
-I followed this tutorial to build an application using MongoDB, Express, Node.js and MongoDB (MERN).
+I followed this tutorial to build a Full-Stack application using MongoDB, Express, Node.js and MongoDB (MERN).
 link: https://www.youtube.com/watch?v=enOsPhp2Z6Q&list=WL&index=3&t=355s
 
 Conatinerized the app using Docker and Docker-Compose.
