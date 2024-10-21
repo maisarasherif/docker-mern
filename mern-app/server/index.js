@@ -21,7 +21,7 @@ mongoose.connect('mongodb://root:example@database:27017/myNewDatabase?authSource
 //.then(() => console.log('Connected to MongoDB'))
 //.catch((err) => console.error('MongoDB connection error:', err));
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
     UserModel.find({})
     .then(users => res.json(users))
     .catch(err => res.json(err))
