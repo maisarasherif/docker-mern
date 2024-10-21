@@ -27,7 +27,7 @@ bring up the service using docker-compose.yml file.
 git clone <repository-url>
 cd <repository-directory>
 docker-compose up --build
-
+```
 #### Access the application:
 Frontend: http://localhost:5173
 Backend: http://localhost:5000
