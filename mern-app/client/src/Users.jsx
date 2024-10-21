@@ -6,14 +6,14 @@ function Users () {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        axios.get('http://backend:5000')
+        axios.get('/api')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     
 }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://backend:5000/deleteUser'+id)
+        axios.delete('/api/deleteUser/'+id)
         .then(res => {console.log(res)
             window.location.reload()})
         .catch(errr => console.log(errr))

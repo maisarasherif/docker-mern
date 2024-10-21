@@ -11,7 +11,7 @@ function CreateUser () {
     const Submit = (e) => {
         e.preventDefault();
         // Change the URL to the backend container service name defined in docker-compose.yml file
-        axios.post("http://backend:5000/createUser", {name, email, age})
+        axios.post("/api/createUser", {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')

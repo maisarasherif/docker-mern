@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   frontend:
-    image: react-app
+    build: ./client/
     ports:
       - "5173:5173"
     depends_on:
@@ -10,7 +10,7 @@ services:
       - mern-network
 
   backend:
-    image: api-server
+    build: ./server/
     ports:
       - "5000:5000"
     depends_on:
