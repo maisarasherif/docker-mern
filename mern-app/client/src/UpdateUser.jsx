@@ -12,7 +12,7 @@ function UpdateUser () {
     
     useEffect(() => {
         // Fetch data from the backend service
-        axios.get("http://localhost:5000/getUser/"+id)
+        axios.get("http://backend:5000/getUser/"+id)
         .then(response => {
             console.log(response);
             setName(result.data.name)
@@ -27,7 +27,7 @@ function UpdateUser () {
     const Update = (e) => {
         e.preventDefault();
         // Change the URL to the backend container service name defined in docker-compose.yml file
-        axios.put("http://localhost:5000/updateUser/"+id, {name, email, age})
+        axios.put("http://backend:5000/updateUser/"+id, {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')
