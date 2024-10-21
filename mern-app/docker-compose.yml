@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  frontend:
+    image: react-app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - mern-network
+
+  backend:
+    image: api-server
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    networks:
+      - mern-network
+
+  database:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - db-data:/data/db
+      - ./init:/docker-entrypoint-initdb.d  # Mount the init directory
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root  # Set up a root username
+      - MONGO_INITDB_ROOT_PASSWORD=example  # Set up a root password
+      - MONGO_INITDB_DATABASE=myNewDatabase  # Set the name of the database to create
+    networks:
+      - mern-network
+
+volumes:
+  db-data:
+
+networks:
+  mern-network:

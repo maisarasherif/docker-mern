@@ -1,0 +1,6 @@
+===client===
+npm install
+npm install bootstrap axios react-router-dom
+
+===server===
+npm install express mongoose cors nodemon
