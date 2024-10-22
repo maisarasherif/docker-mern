@@ -33,7 +33,7 @@ docker-compose up --build
 Frontend: http://localhost:5173
 Backend: http://localhost:5000
 ### cloud:
-Frontend: http://<public cloud VM IP>:5173
-Backend: http://<public cloud VM IP>:5000
+Frontend: http://"public VM IP":5173
+Backend: http://:public VM IP::5000
 ### Note: enable inbound rules for ports 5173 and 5000
 
