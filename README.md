@@ -3,7 +3,7 @@ I followed this tutorial to build a Full-Stack application using MongoDB, Expres
 link: https://www.youtube.com/watch?v=enOsPhp2Z6Q&list=WL&index=3&t=355s
 
 Conatinerized the app using Docker and Docker-Compose.
-built the Frontend and Backend using Dockerfiles to construct their respective containers in addition to a MongoDB container to store the data.
+built the Frontend and Backend separately using Dockerfiles to construct their respective containers in addition to a MongoDB container to store the data.
 bring up the service using docker-compose.yml file.
 
 ## Features
