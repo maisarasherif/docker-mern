@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables
-VM_IP="72.146.41.22"
+VM_IP="YOUR-VM-IP"
 VM_USER="azureuser"
 PROJECT_DIR="/home/maisara/Documents/mern-app/server/db"
 REMOTE_PROJECT_DIR="/home/azureuser/"
